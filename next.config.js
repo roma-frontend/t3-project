@@ -11,7 +11,15 @@ const config = {
   },
   eslint: {
     ignoreDuringBuilds: true,
-  }
-};
+  },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "cars-store-five.vercel.app",
+      },
+    ]
+  },
+}
 
 export default config;
